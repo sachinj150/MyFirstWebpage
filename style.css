@@ -1,0 +1,83 @@
+/* Selector {
+    Property: value;
+} */
+
+/*
+https://www.w3schools.com/cssref/css_selectors.asp
+https://css-tricks.com/almanac
+
+Cascading style sheets at the most basic level it 
+indicates that the order of CSS rules matter.
+
+.class
+#id
+*
+element
+element, element
+element element
+element > element
+element + element
+:hover
+:last-child
+:first-child
+!important (not recommended)
+
+What selectors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+*/
+
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url(images/backgroundImage.jpg);
+    background-size: cover;
+}
+
+p {
+    color: #AA3C39;
+    text-align: center;
+    border: 5px solid rgba(255, 172, 170, 0.5);
+    cursor: pointer;
+}
+
+p {
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 90%;
+    font-family: 'Poiret One', cursive;
+}
+
+img {
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext:first-child {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, 0.25);
+}
+
+#div2 {
+    background: rgba(255, 0, 0, 0.2);
+}
